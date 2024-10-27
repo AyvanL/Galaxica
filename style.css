@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.landing{
+    background-image: linear-gradient(rgba(2, 10, 37, 0.267), rgba(2, 10, 37, 0.644)),url('Landing-Page.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.ticketpage{
+    background-image: linear-gradient(rgba(2, 10, 37, 0.267), rgba(19, 14, 0, 0.877)),url('Ticket-Page.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.adverpage{
+    background-image: linear-gradient(rgba(2, 10, 37, 0.267), rgba(0, 0, 0, 0.774)),url('Advertise-Page.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+}
+
+.navbtn{
+    margin-top: 50px;
+    padding-right: 40px;
+    
+}
+
+.landingbtn{
+    background-color: blueviolet;
+    font-size: 30px;
+    border-radius: 30px;
+    height: 50px;
+    width: 250px;
+    color: white;
+    font-family: monospace ;
+    margin-top: 5px;
+}
+
+.logo{
+    margin-left: 30px;
+    margin-top: -10px;
+}
+
+li{
+    padding-right: 20px;
+}
+
+.content1{
+    color:  rgba(255, 255, 255, 0.911);
+    margin-top: 80px;
+}
+
+.embark{
+    margin-top: 70px;
+}
+
+.navb{
+    transition: all 0.3s ease;
+}
+
+.navb a:hover {
+    color: blueviolet !important; 
+    
+}
+
+.deluxe{
+    border: 1px solid;
+    color: white;
+    margin-top: 30px;
+}
+
+.premium{
+    border: 1px solid;
+    color: white;
+    margin-top: 30px;
+
+}
+
+.family{
+    border: 1px solid;
+    color: white;
+    margin-top: 30px;
+}
+
+.ttitle{
+    padding-top: 40px;
+}
+
+.tpicture{
+    padding-top: 100px;
+}
+
+.ttickets{
+    padding-top: 40px;
+}
+
+.greet{
+    width: 200vh;
+    padding-top: 35vh;
+}
+
+.advbtn{
+    background-color: blueviolet;
+    font-size: 30px;
+    border-radius: 30px;
+    height: 100px;
+    width: 350px;
+    color: white;
+    font-family: monospace ;
+    margin-top: 10vh;
+    margin-left: 25vh;
+}
+
