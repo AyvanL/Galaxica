@@ -140,7 +140,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="loginForm">
+                    <form id="loginform">
                         <div class="mb-3">
                             <label for="username" class="form-label">Username</label>
                             <input type="text" class="form-control" id="username" name="username" required>
@@ -151,7 +151,7 @@
                         </div>
 
                         <p>Dont have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#signinModal">create account</a> </p>
-                        <button type="submit" class="btn btn-primary" style="background-color: blueviolet; "onclick="location.href='loggedUser.html';">Login</button>
+                        <button type="submit" class="btn btn-primary" style="background-color: blueviolet;">Login</button>
                     </form>
                 </div>
             </div>
@@ -172,7 +172,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="loginForm" action="userInsert.php" method="POST">
+                    <form id="signinform" action="userInsert.php" method="POST">
                         <div class="mb-3">
                             <label for="Fname" class="form-label">First Name</label>
                             <input type="text" class="form-control" id="Fname" name="Fname" required>
@@ -193,7 +193,7 @@
                             <label for="password" class="form-label">Password</label>
                             <input type="password" class="form-control" id="password" name="password" required>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="background-color: blueviolet;" onclick="location.href='loggedUser.html'">Sign Up</button>
+                        <button type="submit" class="btn btn-primary" style="background-color: blueviolet;" >Sign Up</button>
                     </form>
                     
                 </div>

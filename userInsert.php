@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($conn->query($sql) === TRUE) {
         // Redirect to loggedUser.html if successful
-        header("Location: loggedUser.html");
+        header("Location: logged.html");
         exit(); // Stop further execution of the script
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
