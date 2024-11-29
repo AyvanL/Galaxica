@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +30,9 @@
                     <a class="nav-link text-white fs-6" href="#footer">CONTACT</a>
                 </li>
             </ul>
-            <h1>Hello <p class="username">user</p></h1>
+            <h1>Welcome, <span class="username"></span></h1>
+
+
         </nav>
 
         <div class="text-center content1">
@@ -202,6 +205,21 @@
     </div>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    
+    <script>
+        $(document).ready(function () {
+    // Retrieve username from sessionStorage
+    const username = sessionStorage.getItem('username');
+
+    if (username) {
+        // Display the username on the page
+        $('.username').text(username);
+    } else {
+        // Handle case where the user is not logged in
+        // Maybe redirect to login page if username is not found
+        window.location.href = 'index.html';  // Adjust the path to your login page
+    }
+});
+
+    </script>
 </body>
 </html>
