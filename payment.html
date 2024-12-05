@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Details</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-header bg-primary text-white">
+        <h5 class="card-title mb-0">Booking Details</h5>
+      </div>
+      <div class="card-body">
+        <!-- Username -->
+        <p><strong>Username:</strong> <span id="modalUsername">John Doe</span></p>
+
+        <!-- Senior, Adult, Children, Total Price, Booking Date -->
+        <p><strong>Senior:</strong> <span id="modalSenior">2</span></p>
+        <p><strong>Adult:</strong> <span id="modalAdult">3</span></p>
+        <p><strong>Children:</strong> <span id="modalChildren">1</span></p>
+        <p><strong>Total Price:</strong> <span id="modalTotalPrice">$150</span></p>
+        <p><strong>Booking Date:</strong> <span id="modalBookingDate">2024-12-05</span></p>
+
+        <!-- Payment Method Dropdown -->
+        <div class="mb-3">
+          <label for="paymentMethod" class="form-label">Select Payment Method:</label>
+          <select id="paymentMethod" class="form-select">
+            <option value="debit">Debit Card</option>
+            <option value="credit">Credit Card</option>
+            <option value="paypal">PayPal</option>
+          </select>
+        </div>
+
+        <!-- Card Number Input -->
+        <div class="mb-3">
+          <label for="cardNumber" class="form-label">Enter Card Number:</label>
+          <input type="text" class="form-control" id="cardNumber" placeholder="Enter your card number" required maxlength="16">
+        </div>
+
+        <!-- Enter PIN Input -->
+        <div class="mb-3">
+          <label for="pinInput" class="form-label">Enter PIN:</label>
+          <input type="password" class="form-control" id="pinInput" placeholder="Enter your PIN" required>
+        </div>
+      </div>
+      <div class="card-footer text-end">
+        <button type="button" class="btn btn-secondary" onclick="window.location.href='logged.html';">Cancel</button>
+        <button type="button" class="btn btn-primary" id="confirmBookingButton">Confirm Booking</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="transactionUser.js"></script>
+  <script src="validate.js"></script>
+  <script> 
+    
+  </script>
+</body>
+</html>

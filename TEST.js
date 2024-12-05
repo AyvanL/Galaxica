@@ -78,13 +78,6 @@ $(document).ready(function () {
     $("#submitButton").click(function () {
         const totalPrice = $("#totalPrice").text();
         const selectedDate = $("#calendar").val();
-        const username = localStorage.getItem('username');  // Retrieve the username from localStorage
-
-        // Check if total price is zero
-        if (totalPrice == 0) {
-            alert("Please add at least one ticket.");
-            return; // Stop further execution if total is zero
-        }
 
         if (!selectedDate) {
             alert("Please select a booking date.");
@@ -95,29 +88,17 @@ $(document).ready(function () {
                 adult: counts.adult,
                 children: counts.children,
                 totalPrice: totalPrice,
-                bookingDate: selectedDate,
-                username: username  // Include the username in the data
+                bookingDate: selectedDate
             };
-
-            console.log(bookingData);  // Debug: Log the data to check if it's correct
 
             // Send data to PHP script via AJAX
             $.ajax({
-                url: "insertBooking.php",
+                url: "save_booking.php", // PHP script that will handle the insertion
                 type: "POST",
                 data: bookingData,
                 success: function(response) {
-                    alert(response); // Show the PHP response
-                    console.log(response); // Log the response
-
-                    // Reset inputs after successful submission
-                    counts = { senior: 0, adult: 0, children: 0 }; // Reset counts
-                    $("#counterSenior").text(counts.senior); // Update the display for senior count
-                    $("#counterAdult").text(counts.adult); // Update the display for adult count
-                    $("#counterChildren").text(counts.children); // Update the display for children count
-                    $("#totalPrice").text("0"); // Reset total price
-                    $("#calendar").val(""); // Reset calendar input
-                    
+                    alert("Booking successfully saved!");
+                    console.log(response); // You can log the server response
                 },
                 error: function(xhr, status, error) {
                     alert("An error occurred. Please try again.");
