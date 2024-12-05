@@ -16,10 +16,7 @@ $(document).ready(function () {
             success: function (response) {
                 if (response === "success") {
                     // Store the username in localStorage
-                    localStorage.setItem('username', username);
-            
-                    // Update the span with the class "username"
-                    $(".user").text(username);
+                    
             
                     // Redirect to logged.html if login is successful
                     window.location.href = "logged.html";
@@ -35,6 +32,10 @@ $(document).ready(function () {
         });
     });
 });
+
+
+
+
 
 
 

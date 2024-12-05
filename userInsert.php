@@ -27,8 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($conn->query($sql) === TRUE) {
         // Redirect to loggedUser.html if successful
-        header("Location: logged.html");
-        exit(); // Stop further execution of the script
+        echo "<script>alert('Account created successfully! Please login.'); window.location.href='index.html';</script>";
+        exit();
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }

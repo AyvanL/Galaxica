@@ -25,9 +25,19 @@ $sql = "SELECT * FROM user WHERE username='$user' AND password='$pass'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    echo "success";
+    // If login is successful, insert the username into the 'logged' table
+    $stmt = $conn->prepare("INSERT INTO logged (loggedUsername) VALUES (?)");
+    $stmt->bind_param("s", $user);
+
+    if ($stmt->execute()) {
+        echo "success"; // Send success response to the AJAX call
+    } else {
+        echo "error"; // Error during insertion
+    }
+
+    $stmt->close();
 } else {
-    echo "error";
+    echo "error"; // Login credentials are invalid
 }
 
 $conn->close();
