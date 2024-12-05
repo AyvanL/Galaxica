@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+}
+
+.sideNav{
+    background-color: blueviolet;
+    height: 200vh;
+    padding-right: 50px;
+}
+
+nav h4 a{
+    color: white;
+    text-decoration: none;
+}
+
+nav{
+    margin-top: 15vh;
+    margin-left: 5vh;
+}
+
+h4{
+    padding-bottom: 20px;
+}
