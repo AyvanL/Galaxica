@@ -41,6 +41,7 @@ $result = $conn->query($sql);
             <h4><a href="userAdmin.php">User Account</a></h4>
             <h4><a href="#">Bookings</a></h4>
             <h4><a href="transactionAdmin.php">Transactions</a></h4>
+            <h4 style="margin-top: 200px;"><a href="logged.html">Logout</a></h4>
         </nav>
     </div>
     
