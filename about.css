@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.landing{
+    background-image: linear-gradient(rgba(2, 10, 37, 0.267), rgba(2, 10, 37, 0.644)),url('Landing-Page.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.ticketpage{
+    background-image: linear-gradient(rgba(2, 10, 37, 0.267), rgba(19, 14, 0, 0.877)),url('Ticket-Page.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.adverpage{
+    background-image: linear-gradient(rgba(2, 10, 37, 0.267), rgba(0, 0, 0, 0.774)),url('Advertise-Page.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+}
+
+.navbtn{
+    margin-top: 20px;
+    padding-right: 0px;
+    
+}
+
+.landingbtn{
+    background-color: blueviolet;
+    border-radius: 30px;
+    height: 40px;
+    width: 200px;
+    color: white;
+    font-family: monospace ;
+    
+}
+h2{
+    text-align: center;
+}
+.logo{
+    margin-left: 18px;
+    margin-top: -10px;
+}
+
+li{
+    padding-right: 20px;
+}
+
+.content1{
+    color:  rgba(255, 255, 255, 0.911);
+    margin-top: 60px;
+}
+
+.embark{
+    margin-top: 50px;
+}
+
+.navb{
+    transition: all 0.3s ease;
+    
+}
+.navb a:hover {
+    color: blueviolet !important; 
+    
+}
+
+.deluxe{
+    border: 1px solid;
+    color: white;
+    margin-top: 20px;
+   
+}
+
+.premium{
+    border: 1px solid;
+    color: white;
+    margin-top: 20px;
+    
+
+}
+
+.family{
+    border: 1px solid;
+    color: white;
+    margin-top: 20px;
+    
+
+}
+h1{
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 100px;
+    text-align: center;
+}
+.ttitle{
+    padding-top: 40px;
+}
+
+.tpicture{
+    padding-top: 70px;
+}
+.greet{
+    width: 200vh;
+    padding-top: 30vh;
+}
+ p {
+    align-items: center;
+    font-weight: 400;
+    margin-top: 20px;
+    padding: auto;
+    text-indent: 2rem;
+    font-size: 25px;
+.advbtn{
+    background-color: blueviolet;
+    font-size: 25px;
+    border-radius: 30px;
+    height: 100px;
+    width: 250px;
+    color: white;
+    font-family: monospace ;
+    margin-top: 10vh;
+    margin-left: 25vh;
+}
+.developer img{
+    padding: auto;
+    align-items: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.ttickets .col-md-4 {
+    transition: transform 0.3s ease; /* Smooth transition for the transform property */
+}
+
+.ttickets .col-md-4:hover {
+    transform: translateY(-10px); /* Move the column up by 10 pixels on hover */
+}
+

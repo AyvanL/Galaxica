@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.card a {
+  background-color: blueviolet;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.ticketpage {
+  background-image: linear-gradient(
+      rgba(2, 10, 37, 0.267),
+      rgba(19, 14, 0, 0.877)
+    ),
+    url("Ticket-Page.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.ridepage2 {
+  background-image: linear-gradient(
+      rgba(2, 10, 37, 0.267),
+      rgba(2, 10, 37, 0.644)
+    ),
+    url("");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  padding: auto;
+  height: 100vh;
+}
+
+.card {
+  transition: transform 0.3s ease; /* Smooth transition for the transform property */
+  width: 350px;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Move the column up by 10 pixels on hover */
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap into rows */
+  gap: 90px; /* Adds space between cards */
+  justify-content: center; /* Centers the cards horizontally */
+  padding: 40px;
+}
+
+.card {
+  flex: 1 1 calc(33.33% - 40px); /* Makes each card take up 1/3 of the width minus the gap */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  max-width: 350px; /* Optional: limits max size of cards */
+}
+
+/* Ensure full-width sections */
+.container-fluid.ticketpage,
+.container-fluid.section3,
+.container-fluid.ticketpage {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+}
+
+.container-fluid.ticketpage .container,
+.container-fluid.section3 .container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.landing {
+  background-image: linear-gradient(
+      rgba(2, 10, 37, 0.267),
+      rgba(2, 10, 37, 0.644)
+    ),
+    url("Landing-Page.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200vh;
+  width: 100%;
+}
+
+.adverpage {
+  background-image: linear-gradient(
+      rgba(2, 10, 37, 0.267),
+      rgba(0, 0, 0, 0.774)
+    ),
+    url("Advertise-Page.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+}
+
+.navbtn {
+  margin-top: 20px;
+  padding-right: 0px;
+}
+
+.landingbtn {
+  background-color: blueviolet;
+  border-radius: 30px;
+  height: 40px;
+  width: 200px;
+  color: white;
+  font-family: monospace;
+}
+
+.logo {
+  margin-left: 18px;
+  margin-top: -10px;
+}
+
+li {
+  padding-right: 20px;
+}
+
+.content1 {
+  color: rgba(255, 255, 255, 0.911);
+  margin-top: 60px;
+}
+
+.embark {
+  margin-top: 50px;
+}
+
+.navb {
+  transition: all 0.3s ease;
+}
+
+.navb a:hover {
+  color: blueviolet !important;
+}
+
+.deluxe {
+  border: 1px solid;
+  color: white;
+  margin-top: 20px;
+}
+
+.premium {
+  border: 1px solid;
+  color: white;
+  margin-top: 20px;
+}
+
+.family {
+  border: 1px solid;
+  color: white;
+  margin-top: 20px;
+}
+
+.ttitle {
+  padding-top: 40px;
+}
+
+.tpicture {
+  padding-top: 70px;
+}
+
+.greet {
+  width: 200vh;
+  padding-top: 30vh;
+}
+
+.advbtn {
+  background-color: blueviolet;
+  font-size: 25px;
+  border-radius: 30px;
+  height: 100px;
+  width: 250px;
+  color: white;
+  font-family: monospace;
+  margin-top: 10vh;
+  margin-left: 25vh;
+}
+
+.ttickets .col-md-4 {
+  transition: transform 0.3s ease; /* Smooth transition for the transform property */
+}
+
+.ttickets .col-md-4:hover {
+  transform: translateY(-10px); /* Move the column up by 10 pixels on hover */
+}
+
+.cards-sec {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap into rows */
+  gap: 90px; /* Adds space between cards */
+  justify-content: center; /* Centers the cards horizontally */
+  padding: 40px;
+}
